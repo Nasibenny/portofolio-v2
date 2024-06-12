@@ -1,0 +1,599 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo| My Portofolio</title>
+    <link rel="icon" type="image/png" href="../img/lgs.png" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f143f4fbae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      color: white;
+    }
+  </style>
+
+  <body class="bg-[#131313]">
+    <div class="max-w-lg sm:container px-[10%]">
+      <!-- navigasi start -->
+      <nav class="flex justify-between items-center sm:flex sm:justify-between pt-[40px] pb-[10px] text-center sticky top-0 z-50 sm:backdrop-blur-[2px]">
+        <a href="#" class="text-xl sm:text-2xl text-white">
+          Benny
+          <span class="text-[#00ffee]" style="text-shadow: 0 0 25px #00ffee">Darmawan</span>
+        </a>
+        <button id="menu-toggle" type="button" class="focus:outline-none md:hidden">
+          <i id="menu-icon" class="fa-solid fa-bars fa-xl" style="color: #00ffee"></i>
+        </button>
+        <ul
+          id="mobile-nav"
+          class="mt-10 sm:mt-0 border-solid border-[#00ffee] border-[3px] sm:border-none rounded-xl backdrop-blur-[4px] pl-16 pb-5 absolute flex flex-col right-0 top-16 text-right transition-all ease-in duration-200 sm:w-auto hidden sm:static sm:flex sm:flex-row text-base sm:gap-10 text-white"
+        >
+          <li class="mt-10 mx-8 my-4 sm:mx-0 sm:my-0">
+            <a id="home-link" href="#" class="text-lg sm:text-base nav-link hover:text-[#00ffee] hover:border-b-4 border-[#00ffee] hover:transition delay-250 duration-100 ease-in cursor-pointer">Home</a>
+          </li>
+          <li class="mx-8 my-4 sm:mx-0 sm:my-0">
+            <a href="#education" class="text-lg sm:text-base nav-link hover:text-[#00ffee] hover:border-b-4 border-[#00ffee] hover:transition delay-250 duration-100 ease-in cursor-pointer">Education</a>
+          </li>
+          <li class="mx-8 my-4 sm:mx-0 sm:my-0"><a href="#service" class="text-lg sm:text-base nav-link hover:text-[#00ffee] hover:border-b-4 border-[#00ffee] hover:transition delay-250 duration-100 ease-in cursor-pointer">Service</a></li>
+          <li class="mx-8 my-4 sm:mx-0 sm:my-0">
+            <a href="#testimonial" class="text-lg sm:text-base nav-link hover:text-[#00ffee] hover:border-b-4 border-[#00ffee] hover:transition delay-250 duration-100 ease-in cursor-pointer">Testimonials</a>
+          </li>
+          <li class="mx-8 my-4 sm:mx-0 sm:my-0"><a href="#contact" class="text-lg sm:text-base nav-link hover:text-[#00ffee] hover:border-b-4 border-[#00ffee] hover:transition delay-250 duration-100 ease-in cursor-pointer">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Navigasi end -->
+
+      <!-- hero page start-->
+      <div class="flex flex-col-reverse sm:flex-row sm:mt-[6%] mt-[15%]">
+        <div class="flex flex-col justify-center">
+          <div class=" ">
+            <h2 class="text-[43px] mt-[15%] sm:mt-[10%] sm:text-left sm:text-6xl">Hi, It's <span class="text-[#00ffee]">Benny</span></h2>
+
+            <h2 class="text-[25px] truncate sm:text-2xl font-semibold mt-3">
+              I'm a
+              <span
+                class="text-walking text-[#00ffee] relative before:absolute before:content-[''] before:w-[100%] before:h-[100%] before:bg-[#131313] before:border-l-2 before:border-[#00ffee] before:top-0 before:left-0 before:animate-walk"
+              ></span>
+            </h2>
+          </div>
+          <p class="sm:text-balance sm:w-[80%] mt-5 text-sm font-semibold">I’m a Balinese man. Lived in Denpasar city, As a Frontend Developer makes me good at designing the UI & UX in the website.</p>
+
+          <div class="mt-6 text-left">
+            <a href="https://www.linkedin.com/in/benny-darmawan-a8a92229a/"
+              ><i
+                class="fa-brands fa-linkedin fa-xl border border-[#00ffee] rounded-full px-4 py-6 mr-3 text-[#00ffee] hover:text-black hover:bg-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-300 ease-in cursor-pointer hover:shadow-bright hover:shadow-[#00ffee]"
+              ></i>
+            </a>
+            <a href="https://github.com/Nasibenny">
+              <i
+                class="fa-brands fa-github fa-xl border border-[#00ffee] rounded-full px-4 py-6 mr-3 text-[#00ffee] hover:text-black hover:bg-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-300 ease-in cursor-pointer hover:shadow-bright hover:shadow-[#00ffee]"
+              ></i>
+            </a>
+            <a href="https://www.instagram.com/_bwnnz/">
+              <i
+                class="fa-brands fa-instagram fa-xl border border-[#00ffee] rounded-full px-4 py-6 mr-3 text-[#00ffee] hover:text-black hover:bg-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-300 ease-in cursor-pointer hover:shadow-bright hover:shadow-[#00ffee]"
+              ></i>
+            </a>
+            <a href="https://www.facebook.com/kyurupirate.kyurupirate">
+              <i
+                class="fa-brands fa-facebook fa-xl border border-[#00ffee] rounded-full px-3.5 py-6 mr-3 text-[#00ffee] hover:text-black hover:bg-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-300 ease-in cursor-pointer hover:shadow-bright hover:shadow-[#00ffee]"
+              ></i>
+            </a>
+          </div>
+
+          <div class="flex justify-center sm:justify-normal gap-5 mt-7">
+            <p
+              class="light border border-[#00ffee] w-[50%] sm:w-[15%] py-4 sm:py-3 text-center rounded-full text-lg sm:text-base text-black bg-[#00ffee] hover:transition delay-250 duration-300 ease-in cursor-pointer shadow-bright shadow-[#00ffee] hover:shadow-abright hover:shadow-[#00ffee]"
+            >
+              <a href="https://www.instagram.com/_bwnnz/">Hire</a>
+            </p>
+            <p
+              class="light-contact border-2 border-[#00ffee] w-[40%] sm:w-[15%] py-4 sm:py-3 text-center rounded-full text-lg sm:text-base text-[#00ffee] hover:text-black hover:bg-[#00ffee] hover:transition delay-250 duration-300 ease-in cursor-pointer hover:shadow-bright hover:shadow-[#00ffee]"
+            >
+              <a href="https://www.instagram.com/_bwnnz/">Contact</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="../img/kon.jpg"
+            class="object-scale-down rounded-full w-[90%] cursor-pointer hover:transition delay-250 duration-300 ease-in shadow-bright shadow-[#00ffee] hover:shadow-brighter hover:shadow-[#00ffee] border-[#00ffee] border-[1px]"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- hero page end -->
+      <!-- education page start -->
+      <!-- testing education -->
+
+      <div class="flex flex-col">
+        <h1 class="font-bold text-4xl sm:text-6xl py-14 sm:py-20 flex justify-center pt-[45%] sm:pt-[10%]" id="education">Education</h1>
+
+        <div class="mt-6">
+          <ul class="list-none">
+            <li class="flex sm:ml-10 sm:mb-20 sm:odd:pr-[50%] sm:even:pl-[50%]">
+              <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#00ffee] shadow-sun shadow-[#00ffee]"></div>
+
+              <div class="sm:ml-4">
+                <h3 class="pl-3 text-xl font-bold">2018 - 2021</h3>
+                <div class="mt-5 border-solid border-[4px] border-[#00ffee] rounded-xl sm:rounded-full px-5 py-6 bg-black shadow-sun shadow-[#00ffee]">
+                  <div class="sm:pl-12 sm:pr-12 flex flex-col">
+                    <p class="text-xl pb-1 pt-3">Junior High School 9 Denpasar</p>
+                    <p class="mt-2 sm:w-[400px] text-sm font-normal text-justify">Sitting in junior high school for 3 years, various experiences and relationships have been felt well, until one day a pandemic came to attack the world</p>
+                    <button class="mt-7 text-end" onclick="toggleDisplay('object1')">
+                      <span class="border-solid border-[2px] border-[#00ffee] rounded-3xl hover:bg-[#00ffee] hover:text-black hover:shadow-sun hover:shadow-[#00ffee] py-2 px-5 hover:transition hover:duration-150 duration-75 ease-in"
+                        >Experiences</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div id="object1" class="mt-5 border-[#00ffee] border-solid border-[4px] p-5 rounded-3xl hover:shadow-bright hover:shadow-[#00ffee]">
+                  <div class="text-xl"></div>
+                  <div class="grid grid-cols-2 grid-rows-1 gap-y-8">
+                    <img class="object-cover rounded-xl h-[78%]" src="../img/spen.jpg" alt="" />
+                    <ul class="flex flex-col justify-between pl-5 sm:pl-0">
+                      <li class="">
+                        Joined Spensya ITI Community
+                        <p class="font-normal mt-2 mb-3">Learned about basic technology for 3 years and gained a lot of experience and new relationships.</p>
+                      </li>
+                      <li class="font-normal"><span class="">Date </span>: March - Graduates</li>
+                      <li class="border-solid border-[#00ffee] border-t-2 pt-2 text-gray-400">SMP 9 Denpasar</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Content yang ke-2 -->
+            <li class="flex sm:ml-10 sm:mb-20 sm:odd:pr-[50%] sm:even:pl-[50%] mt-10 sm:mt-0">
+              <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#00ffee] shadow-sun shadow-[#00ffee]"></div>
+
+              <div class="sm:ml-4">
+                <h3 class="pl-3 text-xl font-bold">2021 - 2024</h3>
+                <div class="mt-5 border-solid border-[4px] border-[#00ffee] rounded-xl sm:rounded-full px-5 py-6 bg-black shadow-sun shadow-[#00ffee]">
+                  <div class="sm:pl-12 sm:pr-12 flex flex-col">
+                    <p class="text-xl pb-1 pt-4">Vacational High School TI Bali Global Denpasar</p>
+                    <p class="mt-2 sm:w-[400px] text-sm font-normal text-justify">Learned about technology with software engineering vocations for 3 years and gained a lot of experience and new relationships.</p>
+                    <button class="mt-4 text-end" onclick="toggleDisplay('object2')">
+                      <span class="border-solid border-[2px] border-[#00ffee] rounded-3xl hover:bg-[#00ffee] hover:text-black hover:shadow-sun hover:shadow-[#00ffee] py-2 px-5 hover:transition hover:duration-150 duration-75 ease-in"
+                        >Experiences</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div id="object2" class="mt-5 border-[#00ffee] border-solid border-[4px] p-5 rounded-3xl hover:shadow-bright hover:shadow-[#00ffee]">
+                  <div class="text-xl"></div>
+                  <div class="grid grid-cols-2 grid-rows-4 gap-y-8">
+                    <img class="object-cover rounded-xl h-[78%]" src="../img/asajpg.jpg" alt="" />
+                    <ul class="flex flex-col justify-between pl-5 sm:pl-0">
+                      <li class="">
+                        Internship PT. Asanka
+                        <p class="font-normal mt-2">Internship as a Junior Web Developer for 5 months</p>
+                      </li>
+                      <li class="font-normal"><span class="">Date </span>: July - November</li>
+                      <li class="border-solid border-[#00ffee] border-t-2 pt-2 text-gray-400">PT. Asanka | Denpasar</li>
+                    </ul>
+
+                    <img class="object-cover rounded-xl h-[78%]" src="../img/gred (1).png" alt="" />
+                    <ul class="flex flex-col justify-between pl-5 sm:pl-0">
+                      <li class="">
+                        Joined Globaliti Robotic Development
+                        <p class="font-normal mt-2">Joined the robotic community and participated in various competitions</p>
+                      </li>
+                      <li class="font-normal"><span class="">Date </span>: May - Graduates</li>
+                      <li class="border-solid border-[#00ffee] border-t-2 pt-2 text-gray-400">SMK TI Bali Global Denpasar</li>
+                    </ul>
+                    <img class="object-cover rounded-xl h-[78%]" src="../img/its.jpg" alt="" />
+                    <ul class="flex flex-col justify-between pl-5 sm:pl-0">
+                      <li class="">
+                        IRIS Robotic Competitions
+                        <p class="font-normal mt-2">participated in the national competition of line follower competition held by institute teknologi sepuluh november</p>
+                      </li>
+                      <li class="font-normal"><span class="">Date </span>: August</li>
+                      <li class="border-solid border-[#00ffee] border-t-2 pt-2 text-gray-400">ITS Surabaya | Jawa Timur</li>
+                    </ul>
+                    <img class="object-cover rounded-xl h-[78%]" src="../img/robo.png" alt="" />
+                    <ul class="flex flex-col justify-between pl-5 sm:pl-0">
+                      <li class="">
+                        ROBONEC Robotic Competitions
+                        <p class="font-normal mt-2">Participated in the national competition of line follower competition and won 3rd place</p>
+                      </li>
+                      <li class="font-normal"><span class="">Date </span>: June</li>
+                      <li class="border-solid border-[#00ffee] border-t-2 pt-2 text-gray-400">STIKI | Panjer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex sm:ml-10 sm:mb-20 sm:odd:pr-[50%] sm:even:pl-[50%] mt-10 sm:mt-0">
+              <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#00ffee] shadow-sun shadow-[#00ffee]"></div>
+
+              <div class="sm:ml-4">
+                <h3 class="pl-3 text-xl font-bold">2024 - Now</h3>
+                <div class="mt-5 border-solid border-[4px] border-[#00ffee] rounded-xl sm:rounded-full px-5 py-6 bg-black shadow-sun shadow-[#00ffee]">
+                  <div class="sm:pl-12 sm:pr-12 flex flex-col">
+                    <p class="text-xl pb-1 pt-3">Institut Teknologi dan Bisnis STIKOM</p>
+                    <p class="mt-2 sm:w-[400px] text-sm font-normal text-justify">Entering college by choosing an information systems programme for 3 years</p>
+                    <button class="mt-7 text-end" onclick="toggleDisplay('object3')">
+                      <span class="border-solid border-[2px] border-[#00ffee] rounded-3xl hover:bg-[#00ffee] hover:text-black hover:shadow-sun hover:shadow-[#00ffee] py-2 px-5 hover:transition hover:duration-150 duration-75 ease-in"
+                        >Experiences</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div id="object3" class="mt-5 border-[#00ffee] border-solid border-[4px] p-5 rounded-3xl hover:shadow-bright hover:shadow-[#00ffee]">
+                  <div class="text-xl"></div>
+                  <div class="grid grid-cols-2 grid-rows-2 gap-y-8">
+                    <img class="object-cover rounded-xl h-[78%]" src="../img/music.jpg" alt="" />
+                    <ul class="flex flex-col justify-between pl-5 sm:pl-0">
+                      <li class="">
+                        Joined STIKOM Bali Music Community
+                        <p class="font-normal mt-2">Joining a music community to develop a hobby of playing music</p>
+                      </li>
+                      <li class="font-normal"><span class="">Date </span>: ???</li>
+                      <li class="border-solid border-[#00ffee] border-t-2 pt-2 text-gray-400">ITB STIKOM Bali | Denpasar</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- education page end -->
+
+      <!-- service page start -->
+      <div class="flex flex-col justify-center mt-[10%]">
+        <h1 class="font-bold text-4xl sm:text-6xl pb-20 flex justify-center pt-[45%] sm:pt-[10%]" id="service">Service</h1>
+        <div class="grid sm:grid-cols-2 gap-7">
+          <div class="border-[#00ffee] border-solid border-[4px] p-10 rounded-3xl hover:shadow-bright hover:shadow-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-100 ease-in cursor-pointer">
+            <div class="pb-[10px] sm:text-xl">UI Design</div>
+            <div class="font-normal text-base text-gray-300">Create UI designs that drive user engagement, satisfaction, and conversions.</div>
+          </div>
+          <div class="border-[#00ffee] border-solid border-[4px] p-10 rounded-3xl hover:shadow-bright hover:shadow-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-100 ease-in cursor-pointer">
+            <div class="pb-[10px] sm:text-xl">Frontend Development</div>
+            <div class="font-normal text-base text-gray-300">Transform your digital presence with high-quality and performant frontend development.</div>
+          </div>
+          <div class="border-[#00ffee] border-solid border-[4px] p-10 rounded-3xl hover:shadow-bright hover:shadow-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-100 ease-in cursor-pointer">
+            <div class="pb-[10px] sm:text-xl">Wordpress Development</div>
+            <div class="font-normal text-base text-gray-300">Create WordPress websites that deliver exceptional user experiences and achieve your business goals.</div>
+          </div>
+          <div class="border-[#00ffee] border-solid border-[4px] p-10 rounded-3xl hover:shadow-bright hover:shadow-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-100 ease-in cursor-pointer">
+            <div class="pb-[10px] sm:text-xl">Backend Development</div>
+            <div class="font-normal text-base text-gray-300">Build robust and scalable backend systems that power your applications.</div>
+          </div>
+        </div>
+      </div>
+      <!-- service page end -->
+
+      <!-- testimonial page start -->
+      <div class="my-[10%]">
+        <h1 class="font-bold text-4xl sm:text-6xl py-14 sm:py-20 flex justify-center pt-[45%] sm:pt-[10%]" id="testimonial">Testimonials</h1>
+        <div class="sm:hidden">
+          <div class="max-w-2xl mx-auto">
+            <div id="default-carousel" class="relative" data-carousel="static">
+              <div class="overflow-hidden relative h-72 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <!-- content testimonial -->
+                  <div class="flex flex-col pt-10 items-center">
+                    <img src="../img/oasis.jpg" alt="" class="object-scale-down rounded-full w-[30%] cursor-pointer shadow-sun shadow-[#00ffee] border-solid border-[#00ffee] border-[3px]" />
+                    <div class="text-center text-xl pt-2">Little Oasis Juicery</div>
+                    <div class="text-center">
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                    </div>
+                    <blockquote class="text-center font-normal text-gray-900 dark:text-white pt-3">Great website design, ben😍</blockquote>
+                  </div>
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <!-- content testimonial -->
+                  <div class="flex flex-col pt-10 items-center">
+                    <img src="../img/bos.JPG" alt="" class="object-scale-down rounded-full w-[30%] cursor-pointer hover:transition delay-200 duration-300 ease-in shadow-sun shadow-[#00ffee] border-solid border-[#00ffee] border-[3px]" />
+                    <div class="text-center text-xl pt-2">Daun Kelor</div>
+                    <div class="text-center">
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                    </div>
+                    <blockquote class="text-center font-normal text-gray-900 dark:text-white pt-3"><div class="text-center font-normal text-sm">Cool design, ensuring great user experience😊😍</div></blockquote>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+              </div>
+
+              <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                  </svg>
+                  <span class="hidden">Anterior</span>
+                </span>
+              </button>
+              <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  <span class="hidden">Siguiente</span>
+                </span>
+              </button>
+            </div>
+
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+          </div>
+        </div>
+        <div class="hidden sm:grid grid-cols-3 grid-flow-col gap-14 px-[80px]">
+          <!-- Content -->
+
+          <div
+            class="border-solid border-gray-600 border-[4px] px-[10%] py-[20%] rounded-2xl bg-black hover:shadow-[#00ffee] hover:shadow-abright hover:border-[#00ffee] hover:transition hover:duration-200 hover:ease-out transition duration-700 hover:scale-105 cursor-pointer"
+          >
+            <div class="flex justify-center">
+              <img src="../img/bos.JPG" alt="" class="rounded-full w-[45%] cursor-pointer hover:transition delay-200 duration-300 ease-in shadow-bright shadow-[#00ffee] border-solid border-[#00ffee] border-[3px]" />
+            </div>
+            <div class="text-center mt-[20px] mb-[15px] text-2xl">Daun Kelor</div>
+            <div class="text-center mb-[15px]">
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </div>
+            <div class="text-center font-normal text-sm">Cool design, ensuring great user experience😊😍</div>
+          </div>
+          <div
+            class="border-solid border-gray-600 border-[4px] px-[10%] py-[20%] rounded-2xl bg-black hover:shadow-[#00ffee] hover:shadow-abright hover:border-[#00ffee] hover:transition hover:duration-200 hover:ease-out transition duration-700 hover:scale-105 cursor-pointer"
+          >
+            <div class="flex justify-center">
+              <img src="../img/oasis.jpg" alt="" class="object-scale-down rounded-full w-[45%] cursor-pointer shadow-bright shadow-[#00ffee] border-solid border-[#00ffee] border-[3px]" />
+            </div>
+            <div class="text-center mt-[20px] mb-[15px] text-2xl">Little Oasis Juicery</div>
+            <div class="text-center mb-[15px]">
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </div>
+            <blockquote class="text-center font-normal text-gray-900 dark:text-white">Great website design, ben😍</blockquote>
+          </div>
+
+          <div
+            class="border-solid border-gray-600 border-[4px] px-[10%] py-[20%] rounded-2xl bg-black hover:shadow-[#00ffee] hover:shadow-abright hover:border-[#00ffee] hover:transition hover:duration-200 hover:ease-out transition duration-700 hover:scale-105 cursor-pointer"
+          >
+            <div class="flex justify-center blur-md">
+              <img src="../img/gen.jpg" alt="" class="object-scale-down rounded-full w-[30%] cursor-pointer hover:transition delay-250 duration-300 ease-in shadow-bright shadow-[#00ffee] border-solid border-[#00ffee] border-[3px]" />
+            </div>
+            <div class="flex justify-center flex-col items-center">
+              <i class="fa-solid fa-face-sad-tear rounded-full text-[#00ffee]" style="font-size: 100px"></i>
+              <h1 class="pt-1 font-semibold text-gray-400">we're Sorry</h1>
+            </div>
+            <div class="text-center mt-[20px] mb-[15px] text-2xl"></div>
+            <div class="text-center mb-[15px] blur-md">
+              <i class="fa-solid fa-star" style="color: #c5b478"></i>
+              <i class="fa-solid fa-star" style="color: #c5b478"></i>
+              <i class="fa-solid fa-star" style="color: #c5b478"></i>
+              <i class="fa-solid fa-star" style="color: #c5b478"></i>
+              <i class="fa-solid fa-star" style="color: #c5b478"></i>
+            </div>
+
+            <div class="text-center font-normal text-sm"></div>
+          </div>
+
+          <!-- End Content -->
+        </div>
+      </div>
+      <!-- testimonial page end -->
+      <!-- contact page start -->
+      <div class="my-[10%] mb-[25%] flex flex-col items-center sm:block">
+        <h1 class="font-bold text-4xl sm:text-6xl py-14 sm:py-20 flex justify-center pt-[45%] sm:pt-[10%] gap-2" id="contact">Contact <span class="text-[#00ffee]"> Me</span></h1>
+
+        <div class="sm:grid sm:grid-cols-2">
+          <div class="sm:w-[95%] w-72 space-y-5">
+            <div class="flex items-center rounded-xl border-[#34968f] border-solid border-[4px] py-4 pl-7 pr-4 text-white placeholder:text-gray-400 focus:shadow-sun focus:shadow-[#00ffee]">
+              <input disabled type="text" class="block w-full text-lg font-light bg-[#131313]" placeholder="Email" />
+              <span class="bg-red-500 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">disabled</span>
+            </div>
+            <div class="flex items-center rounded-xl border-[#34968f] border-solid border-[4px] py-4 pl-7 pr-4 text-white placeholder:text-gray-400 focus:shadow-sun focus:shadow-[#00ffee]">
+              <input disabled type="text" class="block w-full text-lg font-light bg-[#131313]" placeholder="Full Name" />
+              <span class="bg-red-500 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">disabled</span>
+            </div>
+            <div class="flex items-center rounded-xl border-[#34968f] border-solid border-[4px] py-4 pl-7 pr-4 text-white placeholder:text-gray-400 focus:shadow-sun focus:shadow-[#00ffee]">
+              <input disabled type="text" class="block w-full text-lg font-light bg-[#131313]" placeholder="Phone Number" />
+              <span class="bg-red-500 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">disabled</span>
+            </div>
+          </div>
+
+          <div class="grid grid-rows-3">
+            <div class="mt-5 sm:mt-0 flex sm:flex items-center w-72 sm:w-auto rounded-xl border-[#34968f] border-solid border-[4px] py-4 pl-7 pr-4 text-white placeholder:text-gray-400 focus:shadow-sun focus:shadow-[#00ffee]">
+              <textarea
+                disabled
+                name=""
+                class="row-span-2 w-[190px] sm:w-[500px] text-lg font-light py-4 sm:pl-7 sm:pr-20 bg-[#131313] text-white placeholder:text-gray-400 focus:shadow-sun focus:shadow-[#00ffee]"
+                id=""
+                placeholder="Your Message"
+              ></textarea>
+              <span class="bg-red-500 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">disabled</span>
+            </div>
+            <div class="pt-[35px]">
+              <span
+                class="text-center rounded-full border-[#00ffee] border-solid border-[4px] py-4 px-6 text-black bg-[#00ffee] shadow-sun shadow-[#00ffee] placeholder:text-gray-400 focus:shadow-sun focus:shadow-[#00ffee] hover:shadow-bright hover:shadow-[#00ffee] hover:transition hover:duration-200 hover:ease-out transition duration-700 cursor-pointer"
+                >Send Messages</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact page end-->
+      <!-- footer start -->
+
+      <!-- footer end -->
+    </div>
+    <footer class="bg-black text-white py-8 px-14">
+      <div class="container mx-auto flex flex-row justify-center lg:flex-row px-4">
+        <div class="w-full lg:w-1/3 flex flex-col lg:justify-end gap-7 pt-3">
+          <div class="mt-2 flex justify-center">
+            <a href="https://www.linkedin.com/in/benny-darmawan-a8a92229a/"
+              ><i
+                class="fa-brands fa-linkedin fa-xl border border-[#00ffee] rounded-full px-4 py-6 mr-3 text-[#00ffee] hover:text-black hover:bg-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-300 ease-in cursor-pointer hover:shadow-bright hover:shadow-[#00ffee]"
+              ></i>
+            </a>
+            <a href="https://github.com/Nasibenny">
+              <i
+                class="fa-brands fa-github fa-xl border border-[#00ffee] rounded-full px-4 py-6 mr-3 text-[#00ffee] hover:text-black hover:bg-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-300 ease-in cursor-pointer hover:shadow-bright hover:shadow-[#00ffee]"
+              ></i>
+            </a>
+            <a href="https://www.instagram.com/_bwnnz/">
+              <i
+                class="fa-brands fa-instagram fa-xl border border-[#00ffee] rounded-full px-4 py-6 mr-3 text-[#00ffee] hover:text-black hover:bg-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-300 ease-in cursor-pointer hover:shadow-bright hover:shadow-[#00ffee]"
+              ></i>
+            </a>
+            <a href="https://www.facebook.com/kyurupirate.kyurupirate">
+              <i
+                class="fa-brands fa-facebook fa-xl border border-[#00ffee] rounded-full px-3.5 py-6 mr-3 text-[#00ffee] hover:text-black hover:bg-[#00ffee] hover:-translate-y-2.5 hover:transition delay-250 duration-300 ease-in cursor-pointer hover:shadow-bright hover:shadow-[#00ffee]"
+              ></i>
+            </a>
+          </div>
+          <!-- Content About -->
+          <ul class="flex flex-row items-center lg:items-start gap-10 justify-center">
+            <li>
+              <a href="https://www.instagram.com/_bwnnz/" class="text-base hover:text-gray-400 font-medium">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="text-base hover:text-gray-400 font-medium">Service</a>
+            </li>
+            <li>
+              <a href="#" class="text-base hover:text-gray-400 font-medium">Testimonials</a>
+            </li>
+          </ul>
+          <!-- label -->
+
+          <p class="text-sm font-normal text-gray-400 text-center py-4">© 2024 Benny Darmawan | All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const text = document.querySelector(".text-walking");
+
+    const textLoad = () => {
+      setTimeout(() => {
+        text.textContent = "Frontend Developer";
+      }, 0);
+      setTimeout(() => {
+        text.textContent = "Backend Developer";
+      }, 4000);
+      setTimeout(() => {
+        text.textContent = "UI/UX Designer";
+      }, 8000);
+    };
+
+    textLoad();
+    setInterval(textLoad, 12000);
+
+    function toggleDisplay(targetId) {
+      const targetElement = document.getElementById(targetId);
+      const currentDisplay = targetElement.style.display;
+      const newDisplay = currentDisplay === "none" ? "block" : "none";
+
+      targetElement.style.display = newDisplay;
+      localStorage.setItem(`displayState_${targetId}`, newDisplay === "block" ? 1 : 0);
+    }
+
+    // Check display state on page load
+    window.onload = function () {
+      const targetIds = ["object1", "object2", "object3", "object4"]; // Array of target IDs
+      targetIds.forEach(function (targetId) {
+        const storedDisplay = localStorage.getItem(`displayState_${targetId}`);
+        if (storedDisplay === "1") {
+          document.getElementById(targetId).style.display = "block";
+        } else {
+          document.getElementById(targetId).style.display = "none";
+        }
+      });
+    };
+
+    // Navbar Focus
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    // Function to handle active class
+    function setActiveClass(event) {
+      // Remove active class from all links
+      navLinks.forEach((link) => {
+        link.classList.remove("text-[#00ffee]", "border-b-4", "border-[#00ffee]");
+      });
+
+      // Add active class to the clicked link
+      event.target.classList.add("text-[#00ffee]", "border-b-4", "border-[#00ffee]");
+    }
+
+    // Add event listener to each link
+    navLinks.forEach((link) => {
+      link.addEventListener("click", setActiveClass);
+    });
+
+    // Set initial active class to home link
+    document.getElementById("home-link").classList.add("text-[#00ffee]", "border-b-4", "border-[#00ffee]");
+
+    // navbar responsive mobile
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    const menuIcon = document.getElementById("menu-icon");
+
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("hidden");
+      menuIcon.classList.toggle("fa-bars"); // Add fa-bars class for hamburger icon
+      menuIcon.classList.toggle("fa-times"); // Add fa-times class for cancel icon
+    });
+
+    document.addEventListener("click", (event) => {
+      const isClickInside = menuToggle.contains(event.target) || mobileNav.contains(event.target);
+
+      if (!isClickInside && !mobileNav.classList.contains("hidden")) {
+        mobileNav.classList.add("hidden");
+        menuIcon.classList.add("fa-bars");
+        menuIcon.classList.remove("fa-times");
+      }
+    });
+    // testimonial mobile
+    document.addEventListener("DOMContentLoaded", function () {
+      const slides = document.querySelectorAll(".carousel-item");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      setInterval(nextSlide, 2000); // Change slide every 3 seconds
+    });
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
