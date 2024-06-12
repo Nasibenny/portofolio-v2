@@ -749,6 +749,10 @@ video {
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-3 {
   width: 0.75rem;
 }
@@ -1692,6 +1696,10 @@ video {
     height: 16rem;
   }
 
+  .sm\:h-auto {
+    height: auto;
+  }
+
   .sm\:w-10 {
     width: 2.5rem;
   }
@@ -1784,6 +1792,10 @@ video {
 
   .sm\:pt-\[10\%\] {
     padding-top: 10%;
+  }
+
+  .sm\:pr-4 {
+    padding-right: 1rem;
   }
 
   .sm\:text-left {
